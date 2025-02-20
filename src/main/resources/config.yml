@@ -1,0 +1,64 @@
+# Настройки радиационных блоков
+radiation-blocks:
+  REDSTONE_BLOCK: 10.0
+  REDSTONE_WIRE: 5.0
+  REDSTONE_TORCH: 3.0
+  REPEATER: 2.0
+  COMPARATOR: 2.0
+  REDSTONE_LAMP: 3.0
+  POWERED_RAIL: 3.0
+  DETECTOR_RAIL: 3.0
+  ACTIVATOR_RAIL: 3.0
+  STICKY_PISTON: 3.0
+  PISTON: 3.0
+  OBSERVER: 3.0
+  DISPENSER: 3.0
+  DROPPER: 3.0
+  DAYLIGHT_DETECTOR: 3.0
+  REDSTONE_ORE: 5.0
+  
+# Параметры сканирования
+check-radius: 8
+
+# Механика поглощения
+absorption:
+  rate: 0.1
+decay:
+  rate: 0.05
+
+# Интерфейс
+display:
+  format: "&4☢ &eОкружение: &6%.1f &e| &cИгрок: &6%.1f &eзивертов"
+
+# Хазмат-костюм
+hazmat:
+  protection-per-piece: 0.225
+
+# Пороги эффектов
+thresholds:
+  100:
+    effects:
+      - NAUSEA 30 1
+      - SLOW 30 1
+  200:
+    effects:
+      - POISON 30 1
+      - WEAKNESS 30 2
+  500:
+    effects:
+      - INSTANT_DAMAGE 1 255
+
+# Новые настройки
+sources:
+  inventory:
+    redstone: 5.0
+
+infection:
+  radius: 5.0
+  rate: 0.5
+  threshold: 100.0
+
+decay:
+  type: exponential   # Тип спада (linear/exponential)
+  rate: 0.01         # Для линейного спада
+  base: 0.99999        # Для экспоненциального (0.999 = -0.1% в секунду)

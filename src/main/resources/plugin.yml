@@ -1,0 +1,14 @@
+name: CIHRad
+version: 0.2
+main: com.example.radiation.RadiationPlugin
+api-version: 1.20
+commands:
+  givegeiger:
+    description: Выдает счетчик Гейгера
+  setradiation:
+    description: Устанавливает уровень радиации
+    usage: /setradiation <игрок> <тип> <значение>
+  givepill:
+    description: Выдает йодовую таблетку
+  givehazmat:
+    description: Выдает хазмат-костюм
